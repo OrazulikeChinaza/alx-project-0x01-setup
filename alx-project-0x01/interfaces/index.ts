@@ -69,5 +69,5 @@ export interface UserData {
 export interface UserModalProps {
   isOpen: boolean; // modal open/close state
   onClose: () => void; // function to close modal
-  onSave: (user: UserData) => void; // function to save new user
+  onSubmit: (user: UserData) => void; // function to save new user
 }

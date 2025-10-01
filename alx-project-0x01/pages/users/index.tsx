@@ -9,10 +9,11 @@ interface UsersPageProps {
 }
 
 const Users: React.FC<UsersPageProps> = ({ users }) => {
+  const posts = users;
   return (
     <main className="p-6">
       <h1 className="text-3xl font-bold mb-6">Users</h1>
-      {users.map((user) => (
+      {posts.map((user) => (
         <UserCard
           key={user.id}
           id={user.id}
